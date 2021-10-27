@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Movieflix</title>
+</head>
+
+<body>
+  <!-- Your Code Goes Here -->
+  <% if(search_result == "Movie could not be found"){ %>
+    <p>Movie could not be found</p>
+  <% } else{ %>  
+    <h1><%=search_result[0]%></h1>
+    <p><%=search_result[1]%></p>
+    <a href="/index"> Home </a>
+ <% } %>
+</body>
+
+</html>
