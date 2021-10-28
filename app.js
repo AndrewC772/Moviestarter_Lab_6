@@ -56,8 +56,10 @@ app.get("/search/:movieName", (req, res) => {
           if (name_test.includes(String(movieName).toLowerCase()) == true) {
             console.log(movie_name_desc)
             res.render("pages/searchResult", { search_result: movie_name_desc})
+            break
           } else {
             res.render("pages/searchResult", { search_result: "Movie could not be found" })
+            break
           }
         }
       })
